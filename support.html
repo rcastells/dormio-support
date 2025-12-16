@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dormio Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: #7C4DFF;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .tagline {
+            text-align: center;
+            color: #888;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            text-align: center;
+            border: 1px solid #2a2a4a;
+        }
+
+        .contact-card h2 {
+            color: #7C4DFF;
+            margin-bottom: 15px;
+        }
+
+        .contact-card a {
+            color: #7C4DFF;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-card p {
+            margin-top: 10px;
+            color: #888;
+        }
+
+        h2 {
+            color: #7C4DFF;
+            font-size: 1.5rem;
+            margin: 30px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #2a2a4a;
+        }
+
+        .faq-section {
+            margin-bottom: 30px;
+        }
+
+        .faq-item {
+            background: #111;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            border: 1px solid #222;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .faq-question:hover {
+            background: #1a1a1a;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: #7C4DFF;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '−';
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: #aaa;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 20px 20px 20px;
+            max-height: 500px;
+        }
+
+        .troubleshooting {
+            background: #111;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid #222;
+        }
+
+        .troubleshooting h3 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .troubleshooting ol {
+            margin-left: 20px;
+            color: #aaa;
+        }
+
+        .troubleshooting li {
+            margin-bottom: 8px;
+        }
+
+        .app-info {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 16px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+            border: 1px solid #2a2a4a;
+        }
+
+        .app-info p {
+            margin: 5px 0;
+            color: #888;
+        }
+
+        .app-info strong {
+            color: #e0e0e0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #222;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #7C4DFF;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dormio Support</h1>
+        <p class="tagline">Sleep sounds, stories & meditation</p>
+
+        <div class="contact-card">
+            <h2>Need Help?</h2>
+            <a href="mailto:support@dormio.app">support@dormio.app</a>
+            <p>We typically respond within 24-48 hours</p>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-section">
+            <div class="faq-item">
+                <div class="faq-question">What is Dormio?</div>
+                <div class="faq-answer">Dormio is a sleep sounds, stories, and meditation app designed to help you relax and sleep better. It features curated audio scenes, nature soundscapes, sleep stories, guided meditations, and customizable sound mixing.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is Dormio free?</div>
+                <div class="faq-answer">Yes! All features are available without a subscription. You can optionally support development through in-app tips if you enjoy the app.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Does Dormio work offline?</div>
+                <div class="faq-answer">Yes. Once you download scenes, you can enjoy them anytime without an internet connection.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I mix two sounds together?</div>
+                <div class="faq-answer">Start playing any sound, tap the "+" button or "Add Sound" option, select a second sound to layer, then adjust individual volumes using the sliders.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What is Flow Mode?</div>
+                <div class="faq-answer">Flow Mode creates a gentle oscillating volume effect that mimics natural breathing rhythms. This can enhance relaxation and meditation. Enable it from the player controls.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What is Loop Mode?</div>
+                <div class="faq-answer">Loop Mode shuffles through all sounds in a category (Sleep, Relax, or Lullaby) for hours of variety without repetition.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I set a sleep timer?</div>
+                <div class="faq-answer">Tap the timer icon in the player and select your desired duration (5 minutes to 8 hours). Audio will gradually fade out when the timer ends.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What is "Continue With"?</div>
+                <div class="faq-answer">After a sleep story or guided meditation ends, Dormio can automatically continue with calming sounds of your choice—Sleep sounds, Relax sounds, or Nature sounds. You can set your preference in Settings or choose each time.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I restore my purchases?</div>
+                <div class="faq-answer">Go to Settings > Restore Purchases. This will restore any tips or purchases made with your Apple ID.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Why does audio stop in the background?</div>
+                <div class="faq-answer">Make sure Background App Refresh is enabled for Dormio in your device Settings. Also check that Low Power Mode is disabled and battery optimization is turned off for the app.</div>
+            </div>
+        </div>
+
+        <h2>Troubleshooting</h2>
+
+        <div class="troubleshooting">
+            <h3>Audio won't play</h3>
+            <ol>
+                <li>Check that your device isn't in Silent Mode</li>
+                <li>Ensure volume is turned up</li>
+                <li>Try closing and reopening the app</li>
+                <li>Restart your device</li>
+            </ol>
+        </div>
+
+        <div class="troubleshooting">
+            <h3>App crashes on startup</h3>
+            <ol>
+                <li>Make sure you have the latest version from the App Store</li>
+                <li>Restart your device</li>
+                <li>Uninstall and reinstall the app</li>
+                <li>Contact support if the issue persists</li>
+            </ol>
+        </div>
+
+        <div class="troubleshooting">
+            <h3>Downloads fail</h3>
+            <ol>
+                <li>Check your internet connection</li>
+                <li>Ensure you have sufficient storage space</li>
+                <li>Try again on WiFi if using cellular data</li>
+                <li>Restart the app and retry</li>
+            </ol>
+        </div>
+
+        <div class="app-info">
+            <p><strong>Dormio</strong></p>
+            <p>Sleep sounds, stories & meditation</p>
+            <p>Category: Health & Fitness</p>
+            <p>Age Rating: 4+</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Dormio. All rights reserved.</p>
+            <p><a href="https://rcastells.github.io/dormio-privacy/">Privacy Policy</a></p>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
