@@ -1,5 +1,3 @@
-# Dormio Support
-
 Welcome to Dormio Support!  
 If you have any questions, issues, or need help using the app, we're here to assist you.
 
