@@ -33,7 +33,7 @@ Tap the timer icon and select **Off**.
 
 ## Privacy Policy
 You can view our Privacy Policy here:  
-[Dormio Privacy Policy](#privacy-policy)
+[Dormio Privacy Policy](https://rcastells.github.io/dormio-privacy/)
 
 Dormio is a sleep sounds application designed to help you relax and fall asleep with calming audio scenes.
 
